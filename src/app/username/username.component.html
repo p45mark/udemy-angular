@@ -1,0 +1,4 @@
+<input type="text" class="form-control" [(ngModel)]="userInput">
+<p>Username: {{ userName }}</p>
+
+<button class="btn btn-info" [disabled]="!userInput.length" (click)="onAddUser()">Add Username</button>
